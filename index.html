@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VESTORA | Men's Fashion</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #080808;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #292318;
+    }
+    .logo {
+      color: #d4af37;
+      font-size: 27px;
+      font-weight: bold;
+      letter-spacing: 4px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+    .hero {
+      min-height: 65vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 50px 20px;
+      background: radial-gradient(ellipse, #292216, #080808 70%);
+    }
+    .hero h1 {
+      font-size: clamp(42px, 10vw, 76px);
+      letter-spacing: 5px;
+      color: #d4af37;
+    }
+    .hero p {
+      margin: 20px 0;
+      color: #ddd;
+      font-size: 18px;
+    }
+    .btn {
+      background: #d4af37;
+      color: #080808;
+      padding: 14px 32px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 3px;
+    }
+    .section { padding: 55px 7%; text-align: center; }
+    .section h2 { color: #d4af37; margin-bottom: 30px; }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 18px;
+    }
+    .category {
+      border: 1px solid #665323;
+      padding: 35px 10px;
+      background: #141414;
+      font-size: 19px;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #aaa;
+      border-top: 1px solid #292318;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">VESTORA</div>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#categories">الأقسام</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <h1>VESTORA</h1>
+      <p>أناقة الرجل تبدأ من هنا</p>
+      <a class="btn" href="#categories">اكتشف مجموعتنا</a>
+    </section>
+
+    <section class="section" id="categories">
+      <h2>اكتشف أقسامنا</h2>
+      <div class="categories">
+        <div class="category">ملابس رجالي</div>
+        <div class="category">أحذية رجالي</div>
+        <div class="category">إطلالات مميزة</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 VESTORA - جميع الحقوق محفوظة
+  </footer>
+</body>
+</html>
